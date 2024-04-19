@@ -1,5 +1,8 @@
 import React , {useState} from 'react'
 import Header from './Header'
+import { API_END_POINT } from '../utils/constant.js';
+import axios from "axios";
+import toast from "react-hot-toast"
 
 const Login = () => {
     const [isLogin, setIsLogin] = useState("true");
@@ -11,9 +14,35 @@ const Login = () => {
         setIsLogin(!isLogin);
     }
 
-    const getInputData = (e) =>{
+    const getInputData = async (e) =>{
         e.preventDefault();
-        console.log(fullName, email, password);
+        
+        if(isLogin){
+            const user = {email, password};
+            try {
+                const res = await axios.post(`${API_END_POINT}/login`, user);
+                if(res.data.success){
+                    toast.success(res.data.message);  
+              }
+              console.log(res);
+          } catch (error) {
+              toast.error(error.response.data.message)
+              console.log(error);
+            }
+        }
+        else{
+            const user = {fullName, email, password};
+            try {
+                const res = await axios.post(`${API_END_POINT}/register`, user);
+                if(res.data.success){
+                      toast.success(res.data.message);  
+                }
+                console.log(res);
+            } catch (error) {
+                toast.error(error.response.data.message)
+                console.log(error);
+            }
+        }
         setFullName("");
         setEmail("");
         setPassword("");
