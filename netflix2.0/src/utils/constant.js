@@ -11,7 +11,9 @@ export const options = {
 };
 
 export const Now_Playing_Movie = "https://api.themoviedb.org/3/movie/now_playing";
-export const Popular_Movie = "https://api.themoviedb.org/3/movie/popular";
+export const Popular_Movie = "https://api.themoviedb.org/3/movie/popular?api_key=78dbf1654e045d60e7e692e6fd146133";
 export const Top_Rated_Movie = "https://api.themoviedb.org/3/movie/top_rated";
 export const Upcoming_Movie = "https://api.themoviedb.org/3/movie/upcoming";
 
+
+export const TMDB_IMG_URL = "https://image.tmdb.org/t/p/w500";
