@@ -2,6 +2,7 @@ import axios from "axios";
 import { Now_Playing_Movie } from "../utils/constant";
 import { getNowPlaingMovies } from "../redux/movieSlice";
 import { useDispatch } from "react-redux";
+import { options } from "../utils/constant";
 
 const useNowPlayingMovies = async () => {
     const dispatch = useDispatch();

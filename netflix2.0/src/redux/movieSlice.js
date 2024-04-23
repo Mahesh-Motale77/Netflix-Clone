@@ -25,5 +25,5 @@ const movieSlice = createSlice({
     }
 });
 
-export const {getNowPlaingMovies, getPopularMovies, getTopRatedMovies, getUpcomingMovies} = movieSlice.action;
+export const {getNowPlaingMovies, getPopularMovies, getTopRatedMovies, getUpcomingMovies} = movieSlice.actions;
 export default movieSlice.reducer;
