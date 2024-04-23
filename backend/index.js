@@ -7,7 +7,6 @@ import cookieParser from "cookie-parser";
 import userRoute from "./routes/userRoute.js"
 import cors from "cors";
 
-databaseConnection();
 
 dotenv.config({
     path: ".env"
@@ -30,5 +29,6 @@ app.use("/api/v1/user",userRoute)
 // http://localhost:8080/api/v1/user/register
 
 app.listen(process.env.PORT, ()=>{
+    databaseConnection();
     console.log(`server listen at port ${process.env.PORT}`)
 })
