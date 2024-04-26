@@ -6,11 +6,13 @@ import { options } from "../utils/constant";
 
 
 const usePopularMovies  = async () => {
+    
     const dispatch = useDispatch();
     try {
         const res = await axios.get(Popular_Movie, options);
-        console.log(res.data.result);
-        dispatch(getPopularMovies(res.data.result));
+        console.log(res.data.results);
+        console.log("popular movies")
+        dispatch(getPopularMovies(res.data.results));
     } catch (error) {
         console.log(error);
     }

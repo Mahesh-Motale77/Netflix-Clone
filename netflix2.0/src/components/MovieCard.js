@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { TMDB_IMG_URL } from '../utils/constant';
 
 const MovieCard = ({posterPath}) => {
   return (
