@@ -3,14 +3,16 @@
 
 "Developed a Netflix clone featuring essential functionalities such as user authentication (login/register), curated sections for popular, upcoming, trending, and top-rated movies. Implemented seamless movie streaming through a click-to-watch interface. Incorporated a robust search feature enabling users to find movies easily."
 
-
+<pre>
 Technologies/Library Used :
 Front-End- 
+            
             1. ReactJs
             2. Redux
             3. Tailwind CSS
             4. Custom Hooks
             5. Material UI
+            
 
 Backend-
             1. NodeJs
@@ -20,7 +22,8 @@ Backend-
 API - 
             1. TMDB (The Movie DataBase API)
 
-
+</pre>
+            
 Github Repository Link : https://github.com/Mahesh-Motale77/Netflix-Clone
 
 How to Run: 
