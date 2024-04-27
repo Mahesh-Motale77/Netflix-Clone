@@ -25,7 +25,8 @@ API -
 </pre>
             
 Github Repository Link : https://github.com/Mahesh-Motale77/Netflix-Clone
-
+<pre>
+            
 How to Run: 
             1. Download Zip file or clone the repo
             2. Open into Code editor
@@ -40,6 +41,7 @@ How to Run:
 
 (NOTE: Before running project make sure to connect with mongodb and install all dependencies also take API key )
 
+</pre>
 
 Live Site URL : 
 
