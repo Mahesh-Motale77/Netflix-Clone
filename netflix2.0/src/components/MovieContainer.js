@@ -8,6 +8,8 @@ const MovieContainer = () => {
   
   return (
     <div className='bg-black'>
+      <br />
+      <br />
       <div className='relative z-10'>
          <MovieList title={"Popular Movies"} movies={movieState.popularMovies} />
          <MovieList title={"Now Playing Movies"} movies={movieState.nowPlayingMovies} />
